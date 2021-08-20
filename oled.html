@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>OLED</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+      <meta name="Description" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:site_name" content="">
+      <meta name="Keywords" content="">
+      <meta name="Author" content="">
+      <meta name="robots" content="ALL">
+      <link rel="icon" type="image/png" href="./images/layout/favicon.ico">
+      <link rel="stylesheet" href="./stylesheets/css/common.css">
+
+      <link rel="stylesheet" href="./TemplateData/style.css">
+      <script src="./javascripts/jquery-1.8.2.min.js"></script>
+      <script src="https://player.vimeo.com/api/player.js"></script>
+   </head>
+   <body>
+      <div id="wrap">
+         <!-- header-->
+         <header id="header">
+            <section class="gnb_container">
+               <div class="gnb_wrap">
+                   <h1><a href="./index" class="logo"></a></h1>
+                  <ul class="gnb_list">
+                     <li><a href="https://gonyy22.cafe24.com/LifeisGood/Trade/oled.html" class="active"><img src="./images/layout/oled.png" alt=""></a></li>
+                     <li><a href="https://gonyy22.cafe24.com/LifeisGood/Trade/qned.html"><img src="./images/layout/qned.png" alt=""></a></li>
+                     <li><a href="https://gonyy22.cafe24.com/LifeisGood/Trade/nanocell.html"><img src="./images/layout/nanocell.png" alt=""></a></li>
+                     <li><a href="https://gonyy22.cafe24.com/LifeisGood/Trade/av.html"><img src="./images/layout/audio.png" alt=""></a></li>
+                  </ul>
+               </div>
+            </section>
+         </header>
+   <!-- //header-->
+
+        <!--mainContainer-->
+        <div class="he_product_container">
+            <nav class="model_btn_wrap oled_model_btn_wrap">
+                <div class="model_btn_inner_wrap">
+                    <ul>
+                        <li><button type="button" id="clicked" class="active">65R1</button></li>
+                        <li><button type="button">88Z1</button></li>
+                        <li><button type="button">77Z1</button></li>
+                        <li><button type="button">77G1</button></li>
+                        <li><button type="button">65G1</button></li>
+                        <li><button type="button">83C1</button></li>
+                        <li><button type="button">77C1</button></li>
+                        <li><button type="button">65C1</button></li>
+                        <li><button type="button">55C1</button></li>
+                        <li><button type="button">48C1</button></li>
+                        <li><button type="button">65B1</button></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="if_wrap_dimmed">
+                <div class="loading"></div>
+            </div>
+            <div class="if_wrap">
+                <div class="scroll_autoplay_wrap">
+                <canvas id="canvas" width="1400" height="788"></canvas>
+                <div class="scroll_inner_wrap">
+                    <div class="scroll_trace_wrap">
+                        <div class="scroll_trace"></div>
+                    </div>
+                    <div class="trick_scrollbar"></div>
+                    <div class="scrollbar">
+                        <div class="trick_contents"></div>
+                    </div>
+                    <div class="scroll_autoplay_interval"></div>
+                </div>
+            </div>
+
+            <button type="button" class="qr_popup_btn"><img src="./images/icon/key.png" alt="">KEY FEATURES</button>
+            <div class="qr_popup_wrap">
+                <div class="qr_popup"><img src="./images/qr_popup/qr_popup_65R1.png" alt=""></div>
+                <button type="button" class="qr_close_btn"></button>
+            </div>
+            <button type="button" class="close_btn">
+                <div class="line_1"></div>
+                <div class="line_2"></div>
+            </button>
+        </div>
+            <p class="copyright">** 본 사이트는 포트폴리오용으로 모든 자료에 대한 무단 복제 및 도용을 금지합니다.</p>
+
+            <section class="hash_container">
+                <h2 class="title">Discover all new 2021 LG OLED features</h2>
+                <div class="hash_btn_wrap">
+                    <button type="button" id="hash_evo" class="77G1 65G1">#OLED evo</button>
+                    <button type="button" id="hash_self_lit_oled" class="65R1 88Z1 77Z1 77G1 65G1 83C1 77C1 65C1 55C1 48C1 65B1">#SELF-LIT OLED</button>
+                    <button type="button" id="hash_lifestyle" class="77Z1 77G1 65G1 65B1">#Gallery Design</button>
+                    <button type="button" id="hash_gallery_stand" class="65G1 65C1 55C1">#Gallery Stand</button>
+                    <button type="button" id="hash_ai_picture" class="65R1 88Z1 77Z1 77G1 65G1 83C1 77C1 65C1 55C1 48C1">#AI Picture Pro</button>
+                    <button type="button" id="hash_ai_sound_pro" class="65R1 88Z1 77Z1 77G1 65G1 83C1 77C1 65C1 55C1 48C1">#AI Sound Pro</button>
+                    <br>
+                    <button type="button" id="hash_game_optimizer" class="65R1 88Z1 77Z1 77G1 65G1 83C1 77C1 65C1 55C1 48C1 65B1">#Game Optimizer</button>
+                    <button type="button" id="hash_new_home" class="65R1 88Z1 77Z1 77G1 65G1 83C1 77C1 65C1 55C1 48C1 65B1">#New Home</button>
+                    <button type="button" id="hash_magic_remote" class="65R1 88Z1 77Z1 77G1 65G1 83C1 77C1 65C1 55C1 48C1 65B1">#Magic Tap</button>
+                    <button type="button" id="hash_eye_comfort" class="65R1 88Z1 77Z1 77G1 65G1 83C1 77C1 65C1 55C1 48C1 65B1">#Eye Comfort</button>
+                </div>
+            </section>
+            <div class="card_wrap">
+
+                <!--1-->
+                <div class="hash_card hash_evo">
+                    <div class="bg_wrap">
+                        <video playsinline="" autoplay="" loop="" muted="" title="">
+                            <source src="./datafile/02-OLED-EVO.mp4" type="video/mp4">
+                        </video>
+                        <div class="title_wrap">
+                            <p class="main_title">Our best OLED<br>ever.</p>
+                            <p class="sub_title">
+                                LG OLED evo sets a new standard. The next-gen OLED panel<br>
+                                has been redesigned to include an extra layer and a stronger<br>
+                                emissive material. These optimize the structure of the panel,<br>
+                                refining the wavelengths of light and increasing efficiency.<br>
+                                The result is brighter, punchier picture quality,<br>
+                                and improved clarity of content — it's not just the display<br>
+                                that's evolved, it's your viewing experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--2-->
+                <div class="hash_card hash_ai_picture">
+                    <div class="title_wrap">
+                        <p class="main_title">AI Picture Pro</p>
+                        <p class="sub_title sub_title_01">
+                            When you watch a content you love, AI Picture Pro allow you <br>
+                            to experience what the director intended with clearer picture quality and richer sound.
+                        </p>
+                    </div>
+                    <div class="video_container">
+                        <iframe src="https://player.vimeo.com/video/469654323?quality=1080p" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                    </div>
+                </div>
+
+                <!--3-->
+                <div class="hash_card hash_game_optimizer">
+                    <div class="title_wrap">
+                        <p class="main_title">Game Optimizer</p>
+                        <p class="sub_title sub_title_01">
+                            When you play game, Game Optimizer bringing game-specific <br>
+                            functions together with easy control for the best gaming experience.
+                        </p>
+                    </div>
+                    <div class="video_container">
+                        <iframe src="https://player.vimeo.com/video/469653805?quality=1080p" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                    </div>
+                </div>
+
+                <!--4-->
+                <div class="hash_card hash_lifestyle">
+                    <div class="title_wrap">
+                        <p class="main_title">OLED Design.<br>
+                            A gallery worth repeat visits.
+                        </p>
+                        <p class="sub_title sub_title_01">LG OLED TVs redefine what TVs should look like. Their unbelievably slim designs are so beautiful<br>
+                            that they make your living room more like a museum of modern art.</p>
+                    </div>
+                    <div class="swiper-container-all lifestyle_swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="video_wrap">
+                                    <iframe src="https://player.vimeo.com/video/495674227?quality=1080p" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="./images/common/design_card_slide_01.jpg" alt="" class=""></div>
+                            <div class="swiper-slide"><img src="./images/common/design_card_slide_02.jpg" alt="" class=""></div>
+                            <div class="swiper-slide"><img src="./images/common/design_card_slide_03.jpg" alt="" class=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <!--5-->
+                <div class="hash_card hash_new_home">
+                    <div class="txt_wrap">
+                        <p class="main_title">
+                            All New ‘Home’
+                        <p>
+                        <p class="sub_title">
+                            The all new UI provides diverse personalized <br>
+                            content & services at a glance.
+                        </p>
+                    </div>
+                    <div class="video_container">
+                        <ul class="icon_wrap">
+                            <li>
+                                <span>
+                                    Information
+                                </span>
+                                <p>
+                                    LG TV's feature, <br>
+                                    weather, key alerts
+                                </p>
+                            </li>
+                            <li>
+                                <span>
+                                    Search
+                                </span>
+                                <p>
+                                    Integrated Search
+                                </p>
+                            </li>
+                            <li>
+                                <span>
+                                    Recommended <br>
+                                    Content
+                                </span>
+                                <p>
+                                    User fit content <br>
+                                    Based on viewing history
+                                </p>
+                            </li>
+                            <li>
+                                <span>
+                                    IoT Control
+                                </span>
+                                <p>
+                                    Easy control <br>
+                                    IoT devices
+                                </p>
+                            </li>
+                            <li>
+                                <span>
+                                    Sports
+                                </span>
+                                <p>
+                                    Your favorite team’s <br>
+                                    status at a glance
+                                </p>
+                            </li>
+                            <li>
+                                <span>
+                                    Shop*
+                                </span>
+                                <p>
+                                    Home shopping <br>
+                                    experience on TV
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="video_wrap">
+                            <iframe src="https://player.vimeo.com/video/469653342?quality=1080p" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!--6-->
+                <div class="hash_card hash_magic_remote">
+                    <div class="txt_wrap">
+                        <p class="main_title">
+                            New <br>
+                            Magic Remote
+                        </p>
+                        <p class="sub_title">
+                            The new Magic Remote is optimized to search for content <br>
+                            and provide quick access to services.
+                        </p>
+                    </div>
+                    <div class="video_container">
+                        <iframe src="https://player.vimeo.com/video/469653911?quality=1080p" width="900" height="510" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                    </div>
+                </div>
+
+                <!--7-->
+                <div class="hash_card hash_gallery_stand">
+                    <div class="title_wrap">
+                        <p class="main_title">Designed to stand out.</p>
+                        <p class="sub_title sub_title">
+                            Picturesque works of art aren't just for walls anymore.<br>
+                            The Gallery Stand gives you the freedom to place your TV out in the open and turn your home into a gallery.
+                        </p>
+                    </div>
+                    <div class="swiper-container-all gallery_swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="video_container">
+                                    <iframe src="https://player.vimeo.com/video/470863551?quality=1080p" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                                </div>
+                            </div>
+                            <div class="swiper-slide"><img src="./images/common/card_slide_01.jpg" alt="" class=""></div>
+                            <div class="swiper-slide"><img src="./images/common/card_slide_02.jpg" alt="" class=""></div>
+                            <div class="swiper-slide"><img src="./images/common/card_slide_03.jpg" alt="" class=""></div>
+                            <div class="swiper-slide">
+                                <div class="video_container">
+                                    <iframe src="https://player.vimeo.com/video/469655692?quality=1080p" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <!--8-->
+                <div class="hash_card hash_magic_explorer">
+                    <div class="txt_wrap">
+                        <strong>
+                            Magic Explorer
+                        </strong>
+                        <p>
+                            With the push of a button, get customized information <br>
+                            related to content without the hassle of searching.
+                        </p>
+                    </div>
+                    <div class="video_container">
+                        <iframe src="https://player.vimeo.com/video/469654270?quality=1080p" width="900" height="510" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                    </div>
+                </div>
+
+                <!--9-->
+                <div class="hash_card hash_self_lit_oled">
+                    <div class="txt_wrap">
+                        <p class="main_title">
+                            SELF-LIT OLED<br>
+                            Technology
+                        </p>
+                        <p class="sub_title">
+                            If you're watching a film with a typical LED TV, <br>
+                            black is not dark enough and the details of the night<br>
+                            scenes are not clear enough.<br>
+                            On the other hand, LG OLED TVs illuminate each<br>
+                            individual pixel independently and produces<br>
+                            the deepest background with the brightest objects.
+                        </p>
+                    </div>
+                    <div class="video_container">
+                        <iframe src="https://player.vimeo.com/video/470099384?quality=1080p" width="900" height="510" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                    </div>
+                </div>
+
+                <!--10-->
+                <div class="hash_card hash_eye_comfort">
+                    <div class="title_wrap">
+                        <p class="main_title">The TV that's safe for your eyes.</p>
+                        <p class="sub_title sub_title_01">
+                            LG OLED TVs have been certified as flicker-free, low blue light displays that pose no photobiological hazard to your eyes.<br>
+                            Unlike LED TVs, which flicker and emit of lot of blue light. So sit back, relax, and enjoy the view.
+                        </p>
+                    </div>
+                    <video playsinline="" autoplay="" loop="" muted="" title="">
+                        <source src="./datafile/09-Eye-Comfort-Desktop.mp4" type="video/mp4">
+                    </video>
+                    <p class="description">
+                        *Shooting conditions: 120Hz display for both OLED and LED, default picture setting / shutter speed : 50FPS 120º<br>
+                        **The results may vary depending on the shooting and playback conditions.<br>
+                        ***Screen images simulated.
+                    </p>
+                </div>
+
+                <!--11-->
+                <div class="hash_card hash_ai_sound_pro">
+                    <div class="title_wrap">
+                        <p class="main_title">AI Sound Pro</p>
+                        <p class="sub_title sub_title_01">
+                            When you watch a content you love, AI Sound Pro allow you <br>
+                            to experience what the director intended with clearer picture quality and richer sound.
+                        </p>
+                    </div>
+                    <div class="video_container">
+                        <iframe src="https://player.vimeo.com/video/469654865?quality=4K" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            //modelname & video autoplay src matching
+            var autoplayOledVideoArr = {
+                "65R1" : "https://player.vimeo.com/video/481587247?quality=1080p",
+                "88Z1" : "https://player.vimeo.com/video/475354664?quality=1080p",
+                "77Z1" : "https://player.vimeo.com/video/475354557?quality=1080p",
+                "77G1" : "https://player.vimeo.com/video/475354112?quality=1080p",
+                "65G1" : "https://player.vimeo.com/video/475353539?quality=1080p",
+                "83C1" : "https://player.vimeo.com/video/475354580?quality=1080p",
+                "77C1" : "https://player.vimeo.com/video/475353968?quality=1080p",
+                "65C1" : "https://player.vimeo.com/video/475353307?quality=1080p",
+                "55C1" : "https://player.vimeo.com/video/475417304?quality=1080p",
+                "48C1" : "https://player.vimeo.com/video/475352459?quality=1080p",
+                "65B1" : "https://player.vimeo.com/video/475353194?quality=1080p"
+            };
+
+            $(".close_btn").on("click",function(){
+                $(".autoplay_video").css("display","none");
+                $("#canvas").css("display","none");
+                $(this).css("display","none");
+                $(".scroll_autoplay_wrap").css("display","none");
+                $(".info_wrap").css("margin","0 0 0 0");
+                $(".more_btn").css("transform","translateY(-174px)");
+                $(".btn_autoplay_video_wrap").css("display","block");
+                $(".if_wrap").css("height","867px");
+                $(".qr_popup_btn").css({"transform":"translate(700px, -434px)","display":"block"});
+                $(".qr_popup").css("display","none");
+                $(".qr_close_btn").css("display","none");
+                $(".qr_popup_wrap").css({"display":"block","z-index":"0"});
+            })
+
+            //furioos
+            var iframeArr = {
+                "65R1" : "https://portal.furioos.com/embed/654.110?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                "88Z1" : "https://portal.furioos.com/embed/791.251?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                "77Z1" : "https://portal.furioos.com/embed/201.575?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                "77G1" : "https://portal.furioos.com/embed/282.426?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                "65G1" : "https://portal.furioos.com/embed/569.247?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                "83C1" : "https://portal.furioos.com/embed/190.687?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                "77C1" : "https://portal.furioos.com/embed/773.638?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                "65C1" : "https://portal.furioos.com/embed/258.273?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                "55C1" : "https://portal.furioos.com/embed/039.249?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                "48C1" : "https://portal.furioos.com/embed/948.132?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                "65B1" : "https://portal.furioos.com/embed/144.696?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true"
+            };
+
+        </script>
+        <!--//mainContainer-->
+
+</div>
+<script src="./javascripts/plugin.js"></script>
+<script src="./javascripts/design_common.js"></script>
+</body>
+</html>

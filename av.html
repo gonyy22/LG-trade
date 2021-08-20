@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Audio</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+      <meta name="Description" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:site_name" content="">
+      <meta name="Keywords" content="">
+      <meta name="Author" content="">
+      <meta name="robots" content="ALL">
+      <link rel="icon" type="image/png" href="./images/layout/favicon.ico">
+      <link rel="stylesheet" href="./stylesheets/css/common.css">
+
+      <link rel="stylesheet" href="./TemplateData/style.css">
+      <script src="./javascripts/jquery-1.8.2.min.js"></script>
+      <script src="https://player.vimeo.com/api/player.js"></script>
+   </head>
+   <body>
+      <div id="wrap">
+         <!-- header-->
+         <header id="header">
+            <section class="gnb_container">
+               <div class="gnb_wrap">
+                  <h1><a href="./index" class="logo"></a></h1>
+                  <ul class="gnb_list">
+                      <li><a href="https://gonyy22.cafe24.com/LifeisGood/Trade/oled.html"><img src="./images/layout/oled.png" alt=""></a></li>
+                      <li><a href="https://gonyy22.cafe24.com/LifeisGood/Trade/qned.html"><img src="./images/layout/qned.png" alt=""></a></li>
+                      <li><a href="https://gonyy22.cafe24.com/LifeisGood/Trade/nanocell.html"><img src="./images/layout/nanocell.png" alt=""></a></li>
+                      <li><a href="https://gonyy22.cafe24.com/LifeisGood/Trade/av.html" class="active"><img src="./images/layout/audio.png" alt=""></a></li>
+                  </ul>
+               </div>
+            </section>
+         </header>
+   <!-- //header-->
+
+        <!--mainContainer-->
+        <div class="he_product_container">
+            <nav class="model_btn_wrap av_model_btn_wrap">
+            <div class="model_btn_inner_wrap">
+                <ul>
+                    <li><button type="button" id="clicked" class="active scrollbar_active_model">SP11RA</button></li>
+                    <li><button type="button">SP9</button></li>
+                    <li><button type="button">SP8</button></li>
+                    <li><button type="button">SP7Y</button></li>
+                    <li><button type="button">SPD7</button></li>
+                    <li><button type="button">SP2</button></li>
+                    <li><button type="button">GX</button></li>
+                    <li><button type="button">Eclair</button></li>
+                    <li><button type="button">PL7</button></li>
+                    <li><button type="button">PL5</button></li>
+                    <li><button type="button">PL2</button></li>
+                    <li><button type="button">PN7</button></li>
+                    <li><button type="button">PN5</button></li>
+                    <li><button type="button">PN1</button></li>
+                    <li><button type="button">FP8</button></li>
+                    <li><button type="button">FN7</button></li>
+                    <li><button type="button">GP9</button></li>
+                </ul>
+            </div>
+            </nav>
+            <div class="if_wrap_dimmed av_if_wrap_dimmed">
+                <div class="loading"></div>
+            </div>
+        <div class="if_wrap">
+            <div class="scroll_autoplay_wrap">
+                <canvas id="canvas" width="1400" height="788"></canvas>
+                <div class="scroll_inner_wrap">
+                    <div class="scroll_trace_wrap">
+                        <div class="scroll_trace"></div>
+                    </div>
+                    <div class="trick_scrollbar"></div>
+                    <div class="scrollbar">
+                        <div class="trick_contents"></div>
+                    </div>
+                    <div class="scroll_autoplay_interval"></div>
+                </div>
+            </div>
+
+            <button type="button" class="qr_popup_btn"><img src="./images/icon/key.png" alt="">KEY FEATURES</button>
+            <div class="qr_popup_wrap">
+                <div class="qr_popup"><img src="./images/qr_popup/qr_popup_65G1.png" alt=""></div>
+                <button type="button" class="qr_close_btn"></button>
+            </div>
+            <button type="button" class="close_btn">
+                <div class="line_1"></div>
+                <div class="line_2"></div>
+            </button>
+        </div>
+        <p class="copyright">** 본 사이트는 포트폴리오용으로 모든 자료에 대한 무단 복제 및 도용을 금지합니다.</p>
+        <section class="hash_container">
+            <h2 class="title">Discover 2021 LG AV features</h2>
+            <div class="hash_btn_wrap">
+                <button type="button" id="hash_lg_sound_bar" class="SP11RA">#The New LG Sound Bar SP11RA</button>
+                <button type="button" id="hash_exceptional_sound" class="SP11RA">#Exceptional Sound with MERIDIAN</button>
+        <!--        <button type="button" id="hash_dolby_sound" class="Eclair">#Immersive Dolby Atoms Sound</button>-->
+                <button type="button" id="hash_eclair_introduction" class="Eclair">#Eclair Introduction</button>
+                <button type="button" id="hash_low_vibration" class="Eclair">#Low Vibration Subwoofer Comparison</button>
+                <button type="button" id="hash_pl7_feature_video" class="PL7">#Balanced & Clear Sound</button>
+                <button type="button" id="hash_pl7_lighting_concept_video" class="PL7">#Multi Color Lighting</button>
+                <button type="button" id="hash_pn7_feature_video" class="PN7">#Enjoy Balanced Sound Anywhere</button>
+                <button type="button" id="hash_pl2_feature_video" class="PL2">#XBOOM Go Jellybean</button>
+                <button type="button" id="hash_fn7_feature_video" class="FN7">#Now with Active Noise Cancellation</button>
+                <button type="button" id="hash_fp8_anc" class="FP8">#ANC</button>
+                <button type="button" id="hash_fp8_roaring_bass" class="FP8">#Roaring Bass</button>
+                <button type="button" id="hash_fp8_ergonomic_design" class="FP8">#Ergonomic Design</button>
+                <button type="button" id="hash_fp8_hsp" class="FP8">#HSP</button>
+                <button type="button" id="empty" class="SP9 SP8 SP7Y SPD7 SP2 G1 PL5 PN5 PN1 GP9"></button>
+            </div>
+        </section>
+
+        <div class="card_wrap">
+            <div class="hash_card hash_lg_sound_bar">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/470064434?quality=1080p" width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_exceptional_sound">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/470108668?quality=1080p" width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_dolby_sound">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/470064536?quality=1080p" width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_low_vibration">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/470064682?quality=1080p"  width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_eclair_introduction">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/477903252?quality=1080p"  width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_pl7_feature_video">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/491494774?quality=1080p"  width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_pl7_lighting_concept_video">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/491494890?quality=1080p"  width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_pn7_feature_video">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/491495082?quality=1080p"  width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_fn7_feature_video">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/495685096?quality=1080p"  width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_pl2_feature_video">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/495685701?quality=1080p"  width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_fp8_anc">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/495955401?quality=1080p"  width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_fp8_roaring_bass">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/495955473?quality=1080p"  width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_fp8_ergonomic_design">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/495955876?quality=1080p"  width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card hash_fp8_hsp">
+                <div class="video_container">
+                    <iframe src="https://player.vimeo.com/video/495954905?quality=1080p"  width="1030" height="580" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="vimeo_iframe"></iframe>
+                </div>
+            </div>
+            <div class="hash_card empty"></div>
+        </div>
+        </div>
+        <script>
+            //modelname & video autoplay src matching
+            var autoplayAvVideoArr = {
+                "SP11RA" : "https://player.vimeo.com/video/481547641?quality=1080p",
+                "SP7Y" : "https://player.vimeo.com/video/475417419?quality=1080p",
+                "SP2" : "https://player.vimeo.com/video/475417386?quality=1080p",
+                "Eclair" : "https://player.vimeo.com/video/481531516?quality=1080p",
+                "GX" : "https://player.vimeo.com/video/485350143?quality=1080p",
+                "PL7" : "https://player.vimeo.com/video/485352537?quality=1080p",
+                "PL5" : "https://player.vimeo.com/video/485352801?quality=1080p",
+                "PL2" : "https://player.vimeo.com/video/485353184?quality=1080p",
+                "FP8" : "https://player.vimeo.com/video/485357774?quality=1080p",
+                "GP9" : "https://player.vimeo.com/video/485357987?quality=1080p",
+                "PN7" : "https://player.vimeo.com/video/491949853?quality=1080p",
+                "PN5" : "https://player.vimeo.com/video/491950147?quality=1080p",
+                "PN1" : "https://player.vimeo.com/video/491950109?quality=1080p",
+                "SP9" : "https://player.vimeo.com/video/491951138?quality=1080p",
+                "SP8" : "https://player.vimeo.com/video/491950235?quality=1080p",
+                "SPD7" : "https://player.vimeo.com/video/491951255?quality=1080p"
+            };
+
+            $(".close_btn").on("click",function(){
+                $(".autoplay_video").css("display","none");
+                $(this).css("display","none");
+                $("#canvas").css("display","none");
+                $(".scroll_autoplay_wrap").css("display","none");
+                $(".info_wrap").css("margin","0 0 0 0");
+                $(".more_btn").css("transform","translateY(-174px)");
+                $(".btn_autoplay_video_wrap").css("display","block");
+                $(".if_wrap").css("height","867px");
+                $(".qr_popup_btn").css({"transform":"translate(700px, -434px)","display":"block"});
+                $(".qr_popup").css("display","none");
+                $(".qr_close_btn").css("display","none");
+                $(".qr_popup_wrap").css({"display":"block","z-index":"0"});
+            })
+
+            //furioos
+            var iframeArr = {
+                SP11RA : "https://portal.furioos.com/embed/581.030?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                SP7Y : "https://portal.furioos.com/embed/472.647?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                SP2 : "https://portal.furioos.com/embed/398.555?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                Eclair : "https://portal.furioos.com/embed/013.205?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                GX : "https://portal.furioos.com/embed/117.796?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                PL7 : "https://portal.furioos.com/embed/309.521?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                PL5 : "https://portal.furioos.com/embed/753.316?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                PL2 : "https://portal.furioos.com/embed/949.502?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                FP8 : "https://portal.furioos.com/embed/253.338?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                GP9 : "https://portal.furioos.com/embed/695.793?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                FN7 : "https://portal.furioos.com/embed/248.215?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                PN7 : "https://portal.furioos.com/embed/901.980?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                PN5 : "https://portal.furioos.com/embed/870.721?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                PN1 : "https://portal.furioos.com/embed/650.974?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                SP9 : "https://portal.furioos.com/embed/389.450?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                SP8 : "https://portal.furioos.com/embed/706.290?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true",
+                SPD7 : "https://portal.furioos.com/embed/038.058?whiteLabel=true&hideTitle=true&hideToolbar=true&autoRun=true"
+            };
+
+        </script>
+        <!--//mainContainer-->
+
+</div>
+<script src="./javascripts/plugin.js"></script>
+<script src="./javascripts/design_common.js"></script>
+</body>
+</html>
